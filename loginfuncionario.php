@@ -3,17 +3,19 @@ include 'head.php';
  ?>
 
 <body>
-	<form>
-		<hr>
+	
+		
+	<form method="post" action="logfuncionario.php">
+	<hr>
 		
 
-<h5>LOGAR</h5>
-	<form method="post" action="aula.php">
-		<input type="text" name="email" placeholder="Digite o email"/>
+<h5>LOGAR</h5>	
+<input type="text" name="nome" placeholder="Digite o nome"/>
+<input type="number" name="cpf" placeholder="Digite o cpf"/>
 		
-		<input type="text" name="senha" placeholder="Digite a senha"/>
+	
 		
-		<button class="btn btn-outline-danger my-2 my-sm-0">LOGAR</button>
+		<button type="submit" class="btn btn-outline-danger my-2 my-sm-0">LOGAR</button>
 
 	</form>
 

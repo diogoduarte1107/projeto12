@@ -1,6 +1,9 @@
 <?php 
 include "conexao.php";
 
+$cpf = $_POST['cpf'];
+
+
 $nome = $_POST['nome'];
 
  
@@ -12,14 +15,10 @@ $senha = $_POST['senha'];
 
 
 
- 
-
-
-
-$sql = "INSERT INTO usuario (nome, email, senha) VALUES('$nome', '$email', '$senha')";
+$sql = "INSERT INTO cliente (cpf, nome, email, senha) VALUES('$cpf', '$nome', '$email', '$senha')";
 
 if ($conn-> query ($sql) === TRUE) {
-	echo "Usuario inserido com sucesso";
+	header("location: form.php");
 	# code...
 }
 else{
