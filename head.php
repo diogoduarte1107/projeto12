@@ -39,17 +39,17 @@
 
 <!-- Image and text -->
 
-<nav  class="navbar navbar-light bg-light">
+<nav  class="navbar navbar-dark bg-dark">
 
   <a class="navbar-brand" href="form.php">
 
     <img src="icone.png" width="40" height="40" class="d-inline-block align-top" alt="">
-    VENDAS.COM
+    DUARTES VENDAS
   </a>
 
    <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search" name="nome" >
-      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" href="....php">Procurar</button>
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" href="....php">Procurar</button>
     </form>
    
 
@@ -61,14 +61,14 @@
     <div class="center">
      
 
-<a href="rcliente.php" class="badge badge-dark">registrar cliente</a>
-<a href="rfuncionario.php" class="badge badge-dark">registrar funcionario</a>
-<a href="logincliente.php" class="badge badge-dark">login cliente</a>
-<a href="loginfuncionario.php" class="badge badge-dark">login funcionario</a>
-<a href="cadproduto.php" class="badge badge-dark">Cadastrar Produto</a>
-<a href="#" class="badge badge-dark">link</a>
-<a href="#" class="badge badge-dark">link</a>
-<a href="#" class="badge badge-dark">link</a>
+<a href="registrocliente.php" class="badge badge-danger">Resgistro cliente</a>
+<a href="registrofuncionario.php" class="badge badge-danger">Registro funcionario</a>
+<a href="logincliente.php" class="badge badge-danger">Login cliente</a>
+<a href="loginfuncionario.php" class="badge badge-danger">Login funcionario</a>
+<a href="cadastroproduto.php" class="badge badge-danger">Cadastro Produto</a>
+<a href="#" class="badge badge-danger">link</a>
+<a href="#" class="badge badge-danger">link</a>
+<a href="#" class="badge badge-danger">link</a>
 <hr>
     </div>
 
@@ -77,7 +77,24 @@
 
 
 <div>
-<img class="container-fluid" src="banner.png" width="1000" height="200"  >
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="fotos projeto/banner.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="fotos projeto/banner.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="fotos projeto/banner.png" alt="Third slide">
+    </div>
+  </div>
 </div>
 
 

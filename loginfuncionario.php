@@ -5,7 +5,7 @@ include 'head.php';
 <body>
 	
 		
-	<form method="post" action="logfuncionario.php">
+	<form method="post" action="selectfuncionario.php">
 	<hr>
 		
 
