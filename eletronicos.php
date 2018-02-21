@@ -2,11 +2,7 @@
 include'head.php';
  ?>
 
-
-
-	<body>
-
-
+  <body>
 
 <section>
 <hr>

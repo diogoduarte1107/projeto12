@@ -35,7 +35,7 @@
   <a class="navbar-brand" href="form.php">
 
     <img src="icone.png" width="40" height="40" class="d-inline-block align-top" alt="">
-    VENDAS.COM
+    DUARTE VENDAS.COM
   </a>
 
    <form class="form-inline my-2 my-lg-0">

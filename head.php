@@ -17,13 +17,6 @@
 	
 
 
-
-
-
-
-
-
-
 <div class="container-fluid superior ">
 	
 	<div class="container">
@@ -43,7 +36,7 @@
 
   <a class="navbar-brand" href="form.php">
 
-    <img src="icone.png" width="40" height="40" class="d-inline-block align-top" alt="">
+    <img src="ico.png" width="40" height="40" class="d-inline-block align-top" alt="">
     DUARTES VENDAS
   </a>
 
@@ -66,9 +59,13 @@
 <a href="logincliente.php" class="badge badge-danger">Login cliente</a>
 <a href="loginfuncionario.php" class="badge badge-danger">Login funcionario</a>
 <a href="cadastroproduto.php" class="badge badge-danger">Cadastro Produto</a>
-<a href="#" class="badge badge-danger">link</a>
-<a href="#" class="badge badge-danger">link</a>
-<a href="#" class="badge badge-danger">link</a>
+<a href="celulares.php" class="badge badge-danger">Celulares</a>
+<a href="eletronicos.php" class="badge badge-danger">Eletronicos</a>
+<a href="games.php" class="badge badge-danger">Games</a>
+<a href="informatica.php" class="badge badge-danger">Informática</a>
+<a href="livros.php" class="badge badge-danger">Livros</a>
+<a href="roupas.php" class="badge badge-danger">Roupas</a>
+
 <hr>
     </div>
 
@@ -86,13 +83,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="fotos projeto/banner.png" alt="First slide">
+      <img class="d-block w-100" src="banner.png" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="fotos projeto/banner.png" alt="Second slide">
+      <img class="d-block w-100" src="banner.png" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="fotos projeto/banner.png" alt="Third slide">
+      <img class="d-block w-100" src="banner.png" alt="Third slide">
     </div>
   </div>
 </div>
