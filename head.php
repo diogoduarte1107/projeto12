@@ -14,7 +14,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
 	<script src="js/bootstrap.min.js"></script>
-	
 
 
 <div class="container-fluid superior ">
@@ -29,70 +28,75 @@
 
 
 
-
 <!-- Image and text -->
 
-<nav  class="navbar navbar-dark bg-dark">
+<nav  class="navbar navbar-light bg-light active">
 
   <a class="navbar-brand" href="form.php">
 
-    <img src="ico.png" width="40" height="40" class="d-inline-block align-top" alt="">
-    DUARTES VENDAS
+    <img src="icone.png" width="40" height="40" class="d-inline-block align-top" alt="">
+    DUARTES.COM
   </a>
 
    <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search" name="nome" >
-      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" href="....php">Procurar</button>
-    </form>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" href="....php">Procurar</button>
+   </form>
    
+   <form class="form-inline my-2 my-lg-0">
+      <a class="btn btn-link my-1"  href="logincliente.php">Faça o login</a>
+      <a class="btn btn-link my-1" href="rcliente.php">Venha cadastre-se</a>
+   </form>
+
 
 </nav>
 <hr>
-
 <div class="container">
   <div class="row justify-content-md-center">
     <div class="center">
-     
 
-<a href="registrocliente.php" class="badge badge-danger">Resgistro cliente</a>
-<a href="registrofuncionario.php" class="badge badge-danger">Registro funcionario</a>
-<a href="logincliente.php" class="badge badge-danger">Login cliente</a>
-<a href="loginfuncionario.php" class="badge badge-danger">Login funcionario</a>
-<a href="cadastroproduto.php" class="badge badge-danger">Cadastro Produto</a>
-<a href="celulares.php" class="badge badge-danger">Celulares</a>
-<a href="eletronicos.php" class="badge badge-danger">Eletronicos</a>
-<a href="games.php" class="badge badge-danger">Games</a>
-<a href="informatica.php" class="badge badge-danger">Informática</a>
-<a href="livros.php" class="badge badge-danger">Livros</a>
-<a href="roupas.php" class="badge badge-danger">Roupas</a>
 
+
+<a class="btn btn-outline-success my-2 my-sm-0" href="celular.php" class="badge badge-success">Celulares</a>
+<a class="btn btn-outline-success my-2 my-sm-0" href="informatica.php" class="badge badge-success">Informática</a>
+<a class="btn btn-outline-success my-2 my-sm-0" href="livros.php" class="badge badge-success">Livros</a>
+<a class="btn btn-outline-success my-2 my-sm-0" href="roupas.php" class="badge badge-success">Roupas</a>
+<a class="btn btn-outline-success my-2 my-sm-0" href="jogos.php" class="badge badge-success">Jogos</a>
+<a class="btn btn-outline-success my-2 my-sm-0" href="notebook.php" class="badge badge-success">Eletrônicos</a>
 <hr>
-    </div>
 
-
-
-
+   </div>
 
 <div>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
+</div>
+
+
+
+ <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="iphone.jpeg" alt="First slide">
+      <img class="d-block w-100" src="produtos/banner.jpeg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="livroo.png" alt="Second slide">
+      <img class="d-block w-100" src="produtos/banner.jpeg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="banner.png" alt="Third slide">
+      <img class="d-block w-100" src="produtos/banner.jpeg" alt="Third slide">
     </div>
   </div>
-</div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
 
 
 

@@ -16,7 +16,7 @@ include'head.php';
 <?php
 include "conexao.php";
 
-$sql = "SELECT * FROM informatica";
+$sql = "SELECT * FROM computador";
 $result = $conn->query($sql);
 
 if($result->num_rows>0){

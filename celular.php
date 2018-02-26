@@ -1,6 +1,10 @@
 <?php 
 include'head.php';
+
+
+
  ?>
+
 
 
 
@@ -16,7 +20,7 @@ include'head.php';
 <?php
 include "conexao.php";
 
-$sql = "SELECT * FROM informatica";
+$sql = "SELECT * FROM celular";
 $result = $conn->query($sql);
 
 if($result->num_rows>0){

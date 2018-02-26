@@ -1,22 +1,21 @@
 <?php 
 include "conexao.php";
 
-$nome = $_POST['nome'];
-
- 
 $cpf = $_POST['cpf'];
 
 
-$idade = $_POST['idade'];
-
-
-
+$nome = $_POST['nome'];
 
  
+$email = $_POST['email'];
+
+
+$senha = $_POST['senha'];
 
 
 
-$sql = "INSERT INTO fucionario (nome, cpf, idade) VALUES('$nome', '$cpf', '$idade')";
+
+$sql = "INSERT INTO cliente (cpf, nome, email, senha) VALUES('$cpf', '$nome', '$email', '$senha')";
 
 if ($conn-> query ($sql) === TRUE) {
 	header("location: form.php");

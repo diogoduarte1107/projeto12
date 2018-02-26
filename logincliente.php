@@ -4,14 +4,14 @@ include 'head.php';
 
 <body>
 
-	<form method="post" action="conexao2.php">
+	<form method="post" action="aula.php">
 	<hr>
-	<h5>LOGIN</h5>
-		<input type="text" name="email" placeholder="Digite o email" required/>
+	<h5>Login</h5>
+		<input type="text" name="email" placeholder="Digite o email" required/><br/><hr/>
 		
-		<input type="password" name="senha" placeholder="Digite a senha" required/>
+		<input type="password" name="senha" placeholder="Digite a senha" required/><br/><hr/>
 		
-		<button class="btn btn-outline-danger my-2 my-sm-0">LOGAR</button>
+		<button class="btn btn-outline-success my-2 my-sm-0">LOGAR</button><br/>
 
 	</form>
 

@@ -17,32 +17,25 @@ include'head.php';
 
     <div class="col-sm">
       <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="imagem.png" alt="Card image cap">
+  <img class="card-img-top" src="produtos/2.jpeg" alt="">
   <div class="card-body">
-    <h5 class="card-title">Nada, por enquanto</h5>
-    <p class="card-text">...</p>
-    <a href="#" class="btn btn-danger">Pesquisar</a>
+    <h5 class="card-title">Email: leandro@gmail.com / contato: 2222222</h5>
+    <p class="card-text">Proprietário Leandro Duarte</p>
+    
   </div>
 </div>
     </div>
     <div class="col-sm">
      <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="imagem.png" alt="Card image cap">
+  <img class="card-img-top" src="produtos/9.jpeg" alt="">
   <div class="card-body">
-    <h5 class="card-title">Nada, por enquanto</h5>
-    <p class="card-text">...</p>
-    <a href="#" class="btn btn-danger">Pesquisar</a>
+    <h5 class="card-title">Email: diogo@gmail.com / contato: 9999999</h5>
+    <p class="card-text">Proprietário Diogo Duarte</p>
+   
   </div>
 </div>
     </div>
-    <div class="col-sm">
-      <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="imagem.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Nada, por enquanto</h5>
-    <p class="card-text">...</p>
-    <a href="#" class="btn btn-danger">Pesquisar</a>
-  </div>
+    
 </div>
     </div>
   </div>
