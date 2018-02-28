@@ -42,11 +42,18 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search" name="nome" >
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" href="....php">Procurar</button>
    </form>
-   
-   <form class="form-inline my-2 my-lg-0">
+
+  
+    <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-link my-1"  href="logincliente.php">Faça o login</a>
       <a class="btn btn-link my-1" href="rcliente.php">Venha cadastre-se</a>
    </form>
+
+<img src="produtos/carrinho.png" width="32" height="32" class="d-inline-block align-top" alt="">
+     
+     <span class="oi oi-cart"></span>
+
+
 
 
 </nav>

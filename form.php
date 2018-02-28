@@ -15,24 +15,38 @@ include'head.php';
 	<div class="container">
   <div class="row">
 
-    <div class="col-sm">
-      <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="produtos/2.jpeg" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Email: leandro@gmail.com / contato: 2222222</h5>
-    <p class="card-text">Proprietário Leandro Duarte</p>
+    <?php
+include "conexao.php";
+
+$sql = "SELECT * FROM roupa";
+$result = $conn->query($sql);
+
+if($result->num_rows>0){
+  while($row = $result->fetch_assoc()){
+    // echo "<img class='card-img-top'src=".$row['foto']."alt='Card image cap'>";
     
-  </div>
-</div>
-    </div>
-    <div class="col-sm">
-     <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="produtos/9.jpeg" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Email: diogo@gmail.com / contato: 9999999</h5>
-    <p class="card-text">Proprietário Diogo Duarte</p>
-   
-  </div>
+    echo "<div class='col-sm'>";
+    echo "<div class='card' style='width: 18rem'>";
+
+   echo "<img src='produtos/".$row['foto']."'>";
+    echo "<div class='card-body'>";
+    echo "<h5 class='card-title'>".$row['nome']."</h5>";
+    echo "<p class='card-text'> ".$row['descricao']." </p>";
+    echo " <a href='#' class='btn btn-outline-success'>Comprar</a>";
+    echo "</div>";
+    echo"</div>";
+    echo"</div>";
+
+
+  
+  }
+}
+else{
+  echo "0 resultados";
+}
+$conn->close();
+?>
+
 </div>
     </div>
     
