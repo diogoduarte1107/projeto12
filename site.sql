@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Fev-2018 às 23:53
--- Versão do servidor: 10.1.19-MariaDB
--- PHP Version: 7.0.13
+-- Generation Time: 28-Fev-2018 às 23:42
+-- Versão do servidor: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -31,17 +33,18 @@ CREATE TABLE `celular` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `celular`
 --
 
-INSERT INTO `celular` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'Iphone 6', 'Rose', 'celular', 'cel1.jpg'),
-(2, 'Iphone 6 Plus', 'Cinza Espacial', 'celular', 'cel2.jpg'),
-(3, 'Iphone 8', 'Branco', 'celular', 'cel3.jpg');
+INSERT INTO `celular` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
+(1, 'Celular 1', 'Dourado, tela 4.9', 'celular', 'celular1.jpg', 950),
+(2, 'Celular 2', 'Preto, tela 3.0', 'celular', 'poque.jpeg', 800),
+(3, 'Celular 3', 'Preto, tela 5.0', 'celular', 'cel3.jpg', 1000);
 
 -- --------------------------------------------------------
 
@@ -57,6 +60,15 @@ CREATE TABLE `cliente` (
   `senha` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
+--
+-- Extraindo dados da tabela `cliente`
+--
+
+INSERT INTO `cliente` (`id`, `nome`, `cpf`, `email`, `senha`) VALUES
+(5, 'A logica do consumo', 1231231231, 'teste@teste.com2', '123'),
+(6, '', 0, '', ''),
+(7, '', 0, '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -68,17 +80,18 @@ CREATE TABLE `computador` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `computador`
 --
 
-INSERT INTO `computador` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'Notebook Asus', 'I5, 8gb de memoria 1TB', 'computador', 'pc1.jpg'),
-(2, 'Notebook Sansumg', 'I5, 8gb 1tb', 'computador', 'pc2.jpg'),
-(3, 'Notebook Dell', 'I3, 8gb 1tb', 'computador', 'pc3.jpg');
+INSERT INTO `computador` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
+(1, 'Ar condicionado', 'branco', 'eletronico', 'ar.jpg', 2000),
+(2, 'Tv ', 'preta, led, tela 50', 'eletronico', 'tv.jpg', 4000),
+(3, 'Som', 'preto', 'eletronico', 'som.jpg', 800);
 
 -- --------------------------------------------------------
 
@@ -104,17 +117,18 @@ CREATE TABLE `informatica` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `informatica`
 --
 
-INSERT INTO `informatica` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'Pen Driver sandisk', '8GB, Preto e vermelho', 'informatica', 'info1.jpg'),
-(2, 'Pen Drive Multilaser ', '16GB', 'informatica', 'info2.jpg'),
-(3, 'Pen Drive Sony', '8GB, Preto', 'informatica', 'info3.jpg');
+INSERT INTO `informatica` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
+(1, 'Notebook Deel', 'cinza espacial', 'informatica', 'info1.jpg', 2500),
+(2, 'Mouse', 'preto, azul, vermelho e cinza', 'informatica', 'info3.jpg', 35),
+(3, 'teclado', 'preto com detalhes verde', 'informatica', 'info.jpg', 40);
 
 -- --------------------------------------------------------
 
@@ -127,17 +141,18 @@ CREATE TABLE `jogo` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `jogo`
 --
 
-INSERT INTO `jogo` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'POKI', 'Aventura', 'jogo', 'jogo1.jpg'),
-(2, 'Jogos Mortais', 'Terror', 'jogo', 'jogo2.jpg'),
-(3, 'Angry Birds', 'Infantil', 'jogo', 'jogo3.jpg');
+INSERT INTO `jogo` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
+(1, 'The last of us', 'acao', 'jogo', 'games1.jpg', 50),
+(2, 'Pes 2018', 'animacao', 'jogo', 'games2.jpg', 200),
+(3, 'Ps4', 'preto, 1TB', 'jogo', 'games3.jpg', 2000);
 
 -- --------------------------------------------------------
 
@@ -150,17 +165,18 @@ CREATE TABLE `livro` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `livro`
 --
 
-INSERT INTO `livro` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'Illuminati', 'Ficcao Cientifica', 'livro', 'livro1.jpg'),
-(2, 'Imaginacao', 'Aventura', 'livro', 'livro2.jpg'),
-(3, 'Virando o Jogo', 'Acao', 'livro', 'livro3.jpg');
+INSERT INTO `livro` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
+(1, 'Implantando Gorvernancia de TI', 'Informatica', 'livro', 'livro1.jpg', 20),
+(2, 'O Futuro da Humanidade', 'Sociologia', 'livro', 'livro2.jpg', 15),
+(3, 'Pesquisa Academica', 'Sociologia', 'livro', 'livro3.jpg', 23);
 
 -- --------------------------------------------------------
 
@@ -173,17 +189,18 @@ CREATE TABLE `roupa` (
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
   `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `roupa`
 --
 
-INSERT INTO `roupa` (`id`, `nome`, `descricao`, `categoria`, `foto`) VALUES
-(1, 'Camisa Black', 'Preta, GG', 'roupa', 'camisa1.jpg'),
-(2, 'Casaco Black', 'Preto, GG', 'roupa', 'camisa2.jpg'),
-(3, 'Camisa Colorida', 'Colorida, GG', 'roupa', 'camisa3.jpg');
+INSERT INTO `roupa` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
+(1, 'Blusa Polo', 'Azul marinho, tamanho M', 'roupa', 'roupa1.jpg', 45),
+(2, 'Regatas', 'Verde, Azul, Preta, Branca e Cinza, tamanho P, M, G', 'roupa', 'roupa2.jpg', 20),
+(3, 'Camisa Alemanha', 'Branca, GG', 'roupa', 'roupa3.jpg', 300);
 
 --
 -- Indexes for dumped tables
@@ -246,41 +263,50 @@ ALTER TABLE `roupa`
 --
 ALTER TABLE `celular`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT for table `computador`
 --
 ALTER TABLE `computador`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `fucionario`
 --
 ALTER TABLE `fucionario`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `informatica`
 --
 ALTER TABLE `informatica`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `jogo`
 --
 ALTER TABLE `jogo`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `livro`
 --
 ALTER TABLE `livro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `roupa`
 --
 ALTER TABLE `roupa`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
