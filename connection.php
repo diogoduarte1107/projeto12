@@ -2,7 +2,7 @@
 
 //Dados do banco de dados
 define("DB_HOST", "localhost");
-define("DB_NAME", "db");
+define("DB_NAME", "site");
 define("DB_USER", "root");
 define("DB_PASS", "");
 

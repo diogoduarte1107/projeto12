@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 28-Fev-2018 às 23:42
+-- Generation Time: 02-Mar-2018 às 23:15
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -42,9 +42,9 @@ CREATE TABLE `celular` (
 --
 
 INSERT INTO `celular` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
-(1, 'Celular 1', 'Dourado, tela 4.9', 'celular', 'celular1.jpg', 950),
-(2, 'Celular 2', 'Preto, tela 3.0', 'celular', 'poque.jpeg', 800),
-(3, 'Celular 3', 'Preto, tela 5.0', 'celular', 'cel3.jpg', 1000);
+(1, 'Samsung On 7', 'Dourado, tela 4.9', 'celular', 'celular1.jpg', 950),
+(2, 'Samsung Pocket', 'Preto, tela 3.0', 'celular', 'poque.jpeg', 800),
+(3, 'Samsung J5 Pro', 'Preto, tela 5.0', 'celular', 'cel3.jpg', 1000);
 
 -- --------------------------------------------------------
 
@@ -96,6 +96,21 @@ INSERT INTO `computador` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `eletrodomesticos`
+--
+
+CREATE TABLE `eletrodomesticos` (
+  `id` int(4) NOT NULL,
+  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
+  `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
+  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `fucionario`
 --
 
@@ -128,7 +143,7 @@ CREATE TABLE `informatica` (
 INSERT INTO `informatica` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
 (1, 'Notebook Deel', 'cinza espacial', 'informatica', 'info1.jpg', 2500),
 (2, 'Mouse', 'preto, azul, vermelho e cinza', 'informatica', 'info3.jpg', 35),
-(3, 'teclado', 'preto com detalhes verde', 'informatica', 'info.jpg', 40);
+(3, 'Teclado', 'preto com detalhes verde', 'informatica', 'info.jpg', 40);
 
 -- --------------------------------------------------------
 
@@ -225,6 +240,12 @@ ALTER TABLE `computador`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `eletrodomesticos`
+--
+ALTER TABLE `eletrodomesticos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `fucionario`
 --
 ALTER TABLE `fucionario`
@@ -275,6 +296,12 @@ ALTER TABLE `cliente`
 --
 ALTER TABLE `computador`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `eletrodomesticos`
+--
+ALTER TABLE `eletrodomesticos`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `fucionario`

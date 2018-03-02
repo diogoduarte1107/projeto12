@@ -69,7 +69,7 @@
 <a class="btn btn-outline-success my-2 my-sm-0" href="livros.php" class="badge badge-success">Livros</a>
 <a class="btn btn-outline-success my-2 my-sm-0" href="roupas.php" class="badge badge-success">Roupas</a>
 <a class="btn btn-outline-success my-2 my-sm-0" href="jogos.php" class="badge badge-success">Jogos</a>
-<a class="btn btn-outline-success my-2 my-sm-0" href="notebook.php" class="badge badge-success">Eletrônicos</a>
+<a class="btn btn-outline-success my-2 my-sm-0" href="computador.php" class="badge badge-success">Eletrônicos</a>
 <hr>
 
    </div>
