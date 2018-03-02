@@ -45,11 +45,11 @@
 
   
     <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-link my-1"  href="logincliente.php">Faça o login</a>
-      <a class="btn btn-link my-1" href="rcliente.php">Venha cadastre-se</a>
+      <a class="btn btn-link my-1"  href="logincliente.php">Faça o seu login</a>
+      <a class="btn btn-link my-1" href="rcliente.php">Cadastre-se já</a>
    </form>
 
-<img src="produtos/carrinho.png" width="32" height="32" class="d-inline-block align-top" alt="">
+
      
      <span class="oi oi-cart"></span>
 

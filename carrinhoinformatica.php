@@ -45,10 +45,10 @@ include'head.php';
 <body>
 
 	<div class="container">
-		<div class="card mt-5">
+		<div class="card mt-1">
 			 <div class="card-body">
-	    		<h4 class="card-title">Carrinhoinformatica</h4>
-	    		<a class="btn btn-outline-success" href="informatica.php">Lista de Produtos</a>
+	    		<h4 class="card-title">Carrinho de Compras</h4>
+	    		<a class="btn btn-outline-success" href="informatica.php">Lista de Infos</a>
 	    	</div>
 		</div>
 
