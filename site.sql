@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Mar-2018 às 23:15
+-- Generation Time: 03-Mar-2018 às 01:30
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -165,9 +165,9 @@ CREATE TABLE `jogo` (
 --
 
 INSERT INTO `jogo` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco`) VALUES
-(1, 'The last of us', 'acao', 'jogo', 'games1.jpg', 50),
-(2, 'Pes 2018', 'animacao', 'jogo', 'games2.jpg', 200),
-(3, 'Ps4', 'preto, 1TB', 'jogo', 'games3.jpg', 2000);
+(1, 'The last of us', 'Acao', 'jogo', 'games1.jpg', 50),
+(2, 'Pes 2018', 'Animacao', 'jogo', 'games2.jpg', 200),
+(3, 'Console Ps4', 'Preto, 1TB', 'jogo', 'games3.jpg', 2000);
 
 -- --------------------------------------------------------
 

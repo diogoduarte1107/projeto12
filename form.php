@@ -18,7 +18,7 @@ include'head.php';
     <?php
 include "conexao.php";
 
-$sql = "SELECT * FROM roupa";
+$sql = "SELECT * FROM jogo";
 $result = $conn->query($sql);
 
 if($result->num_rows>0){
@@ -32,7 +32,6 @@ if($result->num_rows>0){
     echo "<div class='card-body'>";
     echo "<h5 class='card-title'>".$row['nome']."</h5>";
     echo "<p class='card-text'> ".$row['descricao']." </p>";
-    echo " <a href='#' class='btn btn-outline-success'>Comprar</a>";
     echo "</div>";
     echo"</div>";
     echo"</div>";

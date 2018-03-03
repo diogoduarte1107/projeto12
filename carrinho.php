@@ -84,8 +84,8 @@
 				
 			</table>
 
-			<a class="btn btn-info" href="index.php">Continuar Comprando</a>
-			<button class="btn btn-primary" type="submit">Atualizar Carrinho</button>
+			<a class="btn btn-info" href="index1.php">Continuar Comprando</a>
+			<button class="btn btn-success" type="submit">Atualizar Carrinho</button>
 
 			</form>
 	<?php endif?>
