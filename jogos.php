@@ -12,7 +12,7 @@ include'head.php';
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Carrinho de Compras</title>
+  <title>Lista de Games</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
 
 </head>
@@ -35,7 +35,7 @@ include'head.php';
                   ?>
                </h6>
 
-               <a class="btn btn-primary" href="carrinhojogo.php?acao=add&id=<?php echo $jogo['id']?>" class="card-link">Comprar</a>
+               <a class="btn btn-success" href="carrinhojogo.php?acao=add&id=<?php echo $jogo['id']?>" class="card-link">Comprar</a>
             </div>
           </div>
         </div>
