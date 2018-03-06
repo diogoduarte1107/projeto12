@@ -47,6 +47,7 @@
     <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-link my-1"  href="logincliente.php">Faça o seu login</a>
       <a class="btn btn-link my-1" href="rcliente.php">Cadastre-se já</a>
+      <a class="btn btn-link my-1" href="updatestatus.php">Status do pedido</a>
    </form>
 
 
@@ -70,6 +71,7 @@
 <a class="btn btn-outline-success my-2 my-sm-0" href="roupas.php" class="badge badge-success">Roupas</a>
 <a class="btn btn-outline-success my-2 my-sm-0" href="jogos.php" class="badge badge-success">Jogos</a>
 <a class="btn btn-outline-success my-2 my-sm-0" href="computador.php" class="badge badge-success">Eletrônicos</a>
+
 <hr>
 
    </div>
