@@ -9,7 +9,7 @@ include'head.php';
 	<hr>
 	<h5>Deletar Celular</h5>
 		<input type="text" name="id" placeholder="Digite o id do celular" required/>
-		<button class="btn btn-outline-sucsess btn-sm my-2 my-sm-0">Deletar</button>
+		<button class="btn btn-outline-success btn-sm my-2 my-sm-0">Deletar</button>
 	</form>
 
   </div>
@@ -20,8 +20,8 @@ include'head.php';
 <form method="post" action="deleteinformatica.php">
 	<hr>
 	<h5>Deletar Informática</h5>
-		<input type="text" name="id" placeholder="Digite o id da informatica" required/>
-		<button class="btn btn-outline-sucsess btn-sm my-2 my-sm-0">Deletar</button>
+		<input type="text" name="id" placeholder="Digite o id da info" required/>
+		<button class="btn btn-outline-success btn-sm my-2 my-sm-0">Deletar</button>
 	</form>
 
   </div>
@@ -31,8 +31,8 @@ include'head.php';
 <form method="post" action="deletecomputador.php">
 	<hr>
 	<h5>Deletar Eletrônico</h5>
-		<input type="text" name="id" placeholder="Digite o id do eletrônico" required/>
-		<button class="btn btn-outline-sucsess btn-sm my-2 my-sm-0">Deletar</button>
+		<input type="text" name="id" placeholder="Digite o id do eletrô" required/>
+		<button class="btn btn-outline-success btn-sm my-2 my-sm-0">Deletar</button>
 	</form>
 
 
@@ -43,7 +43,7 @@ include'head.php';
 	<hr>
 	<h5>Deletar Jogo</h5>
 		<input type="text" name="id" placeholder="Digite o id do jogo" required/>
-		<button class="btn btn-outline-sucsess btn-sm my-2 my-sm-0">Deletar</button>
+		<button class="btn btn-outline-success btn-sm my-1 my-sm-0">Deletar</button>
 	</form>
 
   </div>
@@ -54,7 +54,7 @@ include'head.php';
 	<hr>
 	<h5>Deletar Livro</h5>
 		<input type="text" name="id" placeholder="Digite o id do livro" required/>
-		<button class="btn btn-outline-sucsess btn-sm my-2 my-sm-0">Deletar</button>
+		<button class="btn btn-outline-success btn-sm my-2 my-sm-0">Deletar</button>
 	</form>
 
   </div>
@@ -64,7 +64,7 @@ include'head.php';
 	<hr>
 	<h5>Deletar Roupa</h5>
 		<input type="text" name="id" placeholder="Digite o id da roupa" required/>
-		<button class="btn btn-outline-sucsess btn-sm my-2 my-sm-0">Deletar</button>
+		<button class="btn btn-outline-success btn-sm my-2 my-sm-0">Deletar</button>
 	</form>
 
 
