@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Mar-2018 às 01:30
+-- Generation Time: 12-Mar-2018 às 23:40
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -92,21 +92,6 @@ INSERT INTO `computador` (`id`, `nome`, `descricao`, `categoria`, `foto`, `preco
 (1, 'Ar condicionado', 'branco', 'eletronico', 'ar.jpg', 2000),
 (2, 'Tv ', 'preta, led, tela 50', 'eletronico', 'tv.jpg', 4000),
 (3, 'Som', 'preto', 'eletronico', 'som.jpg', 800);
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `eletrodomesticos`
---
-
-CREATE TABLE `eletrodomesticos` (
-  `id` int(4) NOT NULL,
-  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
-  `descricao` varchar(255) COLLATE utf8_bin NOT NULL,
-  `categoria` varchar(255) COLLATE utf8_bin NOT NULL,
-  `foto` varchar(255) COLLATE utf8_bin NOT NULL,
-  `preco` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
@@ -240,12 +225,6 @@ ALTER TABLE `computador`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `eletrodomesticos`
---
-ALTER TABLE `eletrodomesticos`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `fucionario`
 --
 ALTER TABLE `fucionario`
@@ -283,7 +262,7 @@ ALTER TABLE `roupa`
 -- AUTO_INCREMENT for table `celular`
 --
 ALTER TABLE `celular`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `cliente`
@@ -295,13 +274,7 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT for table `computador`
 --
 ALTER TABLE `computador`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `eletrodomesticos`
---
-ALTER TABLE `eletrodomesticos`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `fucionario`
@@ -313,25 +286,25 @@ ALTER TABLE `fucionario`
 -- AUTO_INCREMENT for table `informatica`
 --
 ALTER TABLE `informatica`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `jogo`
 --
 ALTER TABLE `jogo`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `livro`
 --
 ALTER TABLE `livro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `roupa`
 --
 ALTER TABLE `roupa`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -43,7 +43,7 @@
 		<div class="card mt-5">
 			 <div class="card-body">
 	    		<h4 class="card-title">Carrinho</h4>
-	    		<a href="index.php">Lista de Produtos</a>
+	    		<a href="index1.php">Lista de Produtos</a>
 	    	</div>
 		</div>
 

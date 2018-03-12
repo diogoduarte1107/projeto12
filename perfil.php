@@ -6,9 +6,10 @@ include'head.php';
 
 <section class="conteudo">
 
-
-			
-				<figure class="produtos"/>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="center">
+			 <figure class="produtos"/>
 				<img src="produtos/perfil.jpeg" class="tamanho"/>
 				<figcaption>
 									</figcaption>
@@ -20,21 +21,17 @@ include'head.php';
   <div class="row justify-content-md-center">
     <div class="center">
 	
-				<tr> 
-					<th>Turma</th>
-					<th>Ano</th>
-					<th>Idade</th>
-					<th>Pai</th>
-					<th>Mãe</th>
-				</tr>
-				</h1>
-				
-				<tr class="colimp">
-					<td>700</td>
-					<td>5°</td>
-					<td>9anos</td>
-					<td>José</td>
-					<td>Maria</td>
+				<h5>Matricula</h5>
+		<input type="text" name="id" placeholder="1200"/>
+
+		<h5>Nome</h5>
+		<input type="text" name="id" placeholder="Jorge Almeida" required/>
+
+		<h5>Cargo</h5>
+		<input type="text" name="id" placeholder="Vendedor de Info" required/>
+
+		<h5>Idade</h5>
+		<input type="text" name="id" placeholder="33 anos" required/>
 
 	</div>
 	  </div>

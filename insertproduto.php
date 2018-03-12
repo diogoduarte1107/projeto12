@@ -7,6 +7,7 @@ include "conexao.php";
 $nome = $_POST['nome'];
 $descricao = $_POST['descricao'];
 $foto = $_POST['foto'];
+$categoria = $_POST['categoria'];
 
  
 
@@ -16,7 +17,7 @@ $foto = $_POST['foto'];
 
 
 
-$sql = "INSERT INTO produto (nome, descricao, foto) VALUES('$nome', '$descricao', '$foto')";
+$sql = "INSERT INTO produto (nome, descricao, categoria) VALUES('$nome', '$descricao', '$categoria')";
 
 if ($conn-> query ($sql) === TRUE) {
 	header("location:form.php");
